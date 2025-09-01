@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <div class="page1">
+          <div class="capsuleBox">
+            <div class="capsuleLogo">
+              <h1>Veda Global</h1>
+              <div class="loading"></div>
+            </div>
+          </div>
+
+          <div class="capsul">
+            <div class="background">
+              <img id="bgImage" src="./images/ship.jpg" alt="" />
+              <div class="top">
+                <h1>Veda Global</h1>
+                <button class="menuBtn">
+                  GetQuote <i class="ri-arrow-right-up-line"></i>
+                </button>
+              </div>
+              <div class="bottom">
+                <h3>Premium Indian Spices and Honey, Delivered Globally</h3>
+                <button class="menuBtn">
+                  Menu <i class="ri-menu-fill"></i>
+                </button>
+                <h4>
+                  Delivering premium Indian spices and honey with integrity
+                  worldwide.
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page2">
+          <h4>
+            Welcome to the vibrant world of Veda Global, where the richness of
+            Indian spices, cardamom, and honey is thoughtfully harvested and
+            carefully delivered to your doorstep.
+          </h4>
+          <div class="bottom"></div>
+        </div>
+
+        <div class="page3">
+          <div class="top">
+            <div class="left">
+              <div class="imgBox">
+                <img src="./images/greenchilli.jpg" alt="" />
+              </div>
+              <div class="imgBox">
+                <img src="./images/onion.jpg" alt="" />
+              </div>
+            </div>
+            <div class="right">
+              <p>
+                Experience the authentic flavors and natural goodness sourced
+                directly from fertile lands and crafted with unwavering honesty
+                and trust.
+              </p>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="hideBox">
+              <h2>Choose us</h2>
+              <div class="hide"></div>
+            </div>
+            <div class="hideBox">
+              <h2>The Best in the Business</h2>
+              <div class="hide"></div>
+            </div>
+            <p>
+              Our commitment to quality and sustainability ensures that every
+              product reflects the true essence of nature, making your culinary
+              journey exceptional and memorable
+            </p>
+          </div>
+        </div>
+
+        <div class="page4">
+          <div class="slider">
+            <div class="box" style="--time: 24s; --quantity: 6">
+              <h3 style="--index: 1">Veda </h3>
+              <h3 style="--index: 2">Global </h3>
+              <h3 style="--index: 3">Veda </h3>
+              <h3 style="--index: 4">Global </h3>
+              <h3 style="--index: 5">Veda </h3>
+              <h3 style="--index: 6">Global</h3>
+            </div>
+          </div>
+
+          <div class="background">
+            <img src="./images/honey.jpg" alt="" />
+            <div class="topText">
+              <h4>Honey</h4>
+              <h3>(Scroll)</h3>
+            </div>
+            <div class="bottomText">
+              <h3>
+                Nature’s sweet nectar in every jar.
+              </h3>
+            </div>
+          </div>
+
+          <div id="second" class="background2">
+            <img src="./images/cardamom.jpg" alt="" />
+            <div class="topText">
+              <h4>Cardamom</h4>
+              <h3>(Scroll)</h3>
+            </div>
+            <div class="bottomText">
+              <h3>
+                Bold flavors from premium Indian cardamom
+              </h3>
+            </div>
+          </div>
+          <div id="third" class="background2">
+            <img src="./images/redchilli.jpg" alt="" />
+            <div class="topText">
+              <h4>Red CHilli</h4>
+              <h3>(Scroll)</h3>
+            </div>
+            <div class="bottomText">
+              <h3>
+                Spice up life with authentic Indian chillies.
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<!-- Overlay Menu -->
+<div class="menuOverlay" id="menuOverlay">
+  <div class="menuContent">
+    <!-- Close button -->
+    <button class="closeBtn" id="closeMenu">
+      <i class="ri-close-line"></i>
+    </button>
+
+    <ul class="mainMenu">
+      <li><a href="#home">🏠 Home</a></li>
+      <li><a href="#about">ℹ️ About Us</a></li>
+
+      <li class="hasSubmenu">
+        <a href="#products">🌿 Products <i class="ri-arrow-down-s-line"></i></a>
+        <ul class="submenu">
+          <li><a href="#spices">Indian Spices</a></li>
+          <li><a href="#cardamom">Cardamom</a></li>
+          <li><a href="#redchilli">Red Chilli</a></li>
+          <li><a href="#turmeric">Turmeric</a></li>
+          <li><a href="#coriander">Coriander</a></li>
+          <li><a href="#pepper">Black Pepper</a></li>
+          <li><a href="#honey">Natural Honey</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#quality">✅ Quality Standards</a></li>
+      <li><a href="#sourcing">🌍 Global Sourcing</a></li>
+      <li><a href="#contact">📩 Contact Us</a></li>
+      <li><a href="#quote">💬 Get a Quote</a></li>
+    </ul>
+  </div>  
+</div>
+
+
+
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+    integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+    integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+
+  <script src="index.js"></script>
+</html>
