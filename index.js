@@ -141,15 +141,31 @@ tl4.to({}, { duration: 0.4 }, "+=0")
 
 .to("#fourth", {
   transform: "translate(-50%, -56%)",
-}, 'c')
+}, 'd')
 .to("#fourth img", {
   transform: "scale(1)",
-}, 'c')
-.to("#second", {
+}, 'd')
+.to("#third", {
   scale: 0.9,
   opacity: 0,
-}, 'c')
-.from("#third .topText h4, #third .topText h3, #third .bottomText h3", {
+}, 'd')
+.from("#fourth .topText h4, #fourth .topText h3, #fourth .bottomText h3", {
+  opacity: 0,
+  x: 50,
+})
+tl4.to({}, { duration: 0.4 }, "+=0")
+
+.to("#fifth", {
+  transform: "translate(-50%, -56%)",
+}, 'e')
+.to("#fifth img", {
+  transform: "scale(1)",
+}, 'e')
+.to("#fourth", {
+  scale: 0.9,
+  opacity: 0,
+}, 'e')
+.from("#fifth .topText h4, #fifth .topText h3, #fifth .bottomText h3", {
   opacity: 0,
   x: 50,
 })
@@ -197,6 +213,12 @@ document.addEventListener("DOMContentLoaded", () => {
       modal.style.display = "none"; // close modal
     });
   }
+
+  document.querySelectorAll('.menuContent a').forEach(link => {
+  link.addEventListener('click', () => {
+    menuOverlay.classList.remove('active');
+  });
+});
 
   // Close modal when clicking outside content
   window.addEventListener("click", (e) => {
